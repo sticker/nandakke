@@ -1,0 +1,3 @@
+GRANT ALL PRIVILEGES ON nandakke.* TO nandakke IDENTIFIED
+BY 'nandakke00' WITH GRANT OPTION;
+
