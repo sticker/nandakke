@@ -1,0 +1,4 @@
+are:
+    resource: "@areBundle/Resources/config/routing.yml"
+    prefix:   /
+

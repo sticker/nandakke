@@ -1,0 +1,7 @@
+parameters:
+#    are.example.class: nandakke\areBundle\Example
+
+services:
+#    are.example:
+#        class: %are.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
