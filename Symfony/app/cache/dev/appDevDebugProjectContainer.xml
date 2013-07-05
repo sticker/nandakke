@@ -24,7 +24,7 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">49.212.210.156</parameter>
+    <parameter key="database_host">localhost</parameter>
     <parameter key="database_port">3306</parameter>
     <parameter key="database_name">nandakke</parameter>
     <parameter key="database_user">nandakke</parameter>
@@ -2127,7 +2127,7 @@
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="dbname">nandakke</argument>
-        <argument key="host">49.212.210.156</argument>
+        <argument key="host">localhost</argument>
         <argument key="port">3306</argument>
         <argument key="user">nandakke</argument>
         <argument key="password">nandakke00</argument>

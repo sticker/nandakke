@@ -513,7 +513,7 @@ class appDevDebugProjectContainer extends Container
         $c = new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this);
         $c->addEventSubscriber(new \Doctrine\DBAL\Event\Listeners\MysqlSessionInit('UTF8'));
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('dbname' => 'nandakke', 'host' => '49.212.210.156', 'port' => 3306, 'user' => 'nandakke', 'password' => 'nandakke00', 'driver' => 'pdo_mysql', 'driverOptions' => array()), $b, $c, array());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('dbname' => 'nandakke', 'host' => 'localhost', 'port' => 3306, 'user' => 'nandakke', 'password' => 'nandakke00', 'driver' => 'pdo_mysql', 'driverOptions' => array()), $b, $c, array());
     }
 
     /**
@@ -3287,7 +3287,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.charset' => 'UTF-8',
             'kernel.container_class' => 'appDevDebugProjectContainer',
             'database_driver' => 'pdo_mysql',
-            'database_host' => '49.212.210.156',
+            'database_host' => 'localhost',
             'database_port' => 3306,
             'database_name' => 'nandakke',
             'database_user' => 'nandakke',
