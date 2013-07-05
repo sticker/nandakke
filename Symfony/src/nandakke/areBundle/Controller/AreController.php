@@ -8,18 +8,14 @@ class AreController extends Controller
 {
     public function indexAction($name)
     {
-    	print "indexAction start";
     	$ares = $this->getDoctrine()
-    	->getRepository('nandakkeareBundle:Are')
+    	->getRepository('areBundle:Are')
     	->findAll();
 
-    	print "indexAction findAll done";
-
-    	if (!$are) {
+    	if (!$ares) {
     		throw $this->createNotFoundException('No data found');
     	}
 
-    	print "indexAction render start";
-        return $this->render('areBundle:Are:index.html.twig', $ares);
+        return $this->render('areBundle:Are:index.html.twig', array('ares' => $ares));
     }
 }
