@@ -1,3 +1,3 @@
 are_homepage:
     pattern:  /nandakke/{name}
-    defaults: { _controller: areBundle:Default:index }
+    defaults: { _controller: areBundle:Are:index }
