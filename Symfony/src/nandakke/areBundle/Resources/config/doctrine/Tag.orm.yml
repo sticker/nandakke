@@ -1,0 +1,27 @@
+nandakke\areBundle\Entity\Tag:
+    type: entity
+    table: tag
+    fields:
+        tagId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: tag_id
+            generator:
+                strategy: IDENTITY
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+        status:
+            type: boolean
+            nullable: false
+        tag:
+            type: string
+            length: 64
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

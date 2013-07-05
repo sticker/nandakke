@@ -1,0 +1,64 @@
+Are:
+    type: entity
+    table: are
+    fields:
+        areId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: are_id
+            generator:
+                strategy: IDENTITY
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+        status:
+            type: boolean
+            nullable: false
+        question:
+            type: text
+            nullable: true
+        answer:
+            type: text
+            nullable: true
+        description:
+            type: string
+            length: 2083
+            fixed: false
+            nullable: true
+        descriptionType:
+            type: boolean
+            nullable: true
+            column: description_type
+        category1:
+            type: string
+            length: 32
+            fixed: false
+            nullable: true
+            column: category_1
+        category2:
+            type: string
+            length: 32
+            fixed: false
+            nullable: true
+            column: category_2
+        category3:
+            type: string
+            length: 32
+            fixed: false
+            nullable: true
+            column: category_3
+        age:
+            type: boolean
+            nullable: true
+        difficulty:
+            type: boolean
+            nullable: true
+        popularity:
+            type: smallint
+            nullable: true
+    lifecycleCallbacks: {  }

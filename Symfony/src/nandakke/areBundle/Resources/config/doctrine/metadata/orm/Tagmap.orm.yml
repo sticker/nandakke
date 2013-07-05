@@ -1,0 +1,41 @@
+Tagmap:
+    type: entity
+    table: tagmap
+    fields:
+        tagmapId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: tagmap_id
+            generator:
+                strategy: IDENTITY
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+        status:
+            type: boolean
+            nullable: false
+    manyToOne:
+        are:
+            targetEntity: Are
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                are_id:
+                    referencedColumnName: are_id
+            orphanRemoval: false
+        tag:
+            targetEntity: Tag
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                tag_id:
+                    referencedColumnName: tag_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
