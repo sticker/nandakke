@@ -10,13 +10,16 @@ class AreController extends Controller
     {
     	print "indexAction start";
     	$ares = $this->getDoctrine()
-    	->getRepository('areBundle:Are')
+    	->getRepository('nandakkeareBundle:Are')
     	->findAll();
+
+    	print "indexAction findAll done";
 
     	if (!$are) {
     		throw $this->createNotFoundException('No data found');
     	}
 
+    	print "indexAction render start";
         return $this->render('areBundle:Are:index.html.twig', $ares);
     }
 }
